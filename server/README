@@ -1,0 +1,17 @@
+Start Node server with
+----------------------
+yarn run dev
+
+Add to package.json
+-------------------
+"scripts": {
+  "dev": "./node_modules/nodemon/bin/nodemon.js app.js"
+}
+
+Dependacies
+-----------
+yarn add nodemon dotenv express mongoose
+
+Configure /etc/mongod.conf 
+----------------------------
+change default bingIp: 127.0.0.1 to 0.0.0.0

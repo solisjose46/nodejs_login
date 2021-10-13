@@ -1,0 +1,13 @@
+Start Node server with
+----------------------
+yarn run dev
+
+Add to package.json
+-------------------
+"scripts": {
+  "dev": "./node_modules/nodemon/bin/nodemon.js app.js"
+}
+
+Dependacies
+-----------
+yarn add nodemon dotenv express mongoose
