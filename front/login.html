@@ -22,26 +22,39 @@
           </div>
           <div class="row">
             <div class="col">
-              <form action="/login" method="post">
+              <div id="loginFeedback" class=""></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <form>
                 <div class="form-group">
                   <label>username</label>
-                  <input type="text" name="username" class="form-control" />
-                  <!-- <span class="invalid-feedback"></span> -->
+                  <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    class="form-control"
+                  />
                 </div>
                 <div class="form-group">
                   <label>password</label>
-                  <input type="password" name="password" class="form-control" />
-                  <!-- <span class="invalid-feedback"><?php echo $password_err; ?></span> -->
+                  <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    class="form-control"
+                  />
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="login" />
+                  <input id="loginButton" type="button" value="login" />
                 </div>
               </form>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <form action="">
+              <form action="/register" action="get">
                 <div class="form-group">
                   <input type="submit" value="register instead" />
                 </div>
@@ -56,5 +69,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="login.js"></script>
   </body>
 </html>
